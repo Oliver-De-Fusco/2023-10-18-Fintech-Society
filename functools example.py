@@ -1,11 +1,10 @@
 from functools import cache
 # Functools gives us decorators to use for functions
-# Decorators wrap a target function inside of them to easily add extra functionallity
-# In this case the functools cache method which stores our input and the respective output so it doesnt have to be calculated over and over
-# This significantly speeds up programs and even makes some calculations possible
+# Decorators wrap a target function inside of them to easily add extra functionallity.
+# In this case the functools cache method stores our input and the respective output so it doesnt have to be calculated over and over
+# Caching significantly speeds up programs and even makes some calculations possible.
 
-
-# @cache
+@cache
 def fibonacci(n):
     if n <= 1: # This is the base case, a recurisve function without a base case will continue forever
         return n 
